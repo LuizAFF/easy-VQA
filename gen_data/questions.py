@@ -62,14 +62,14 @@ def create_questions(shape, color, location, image_id):
     yes_no_questions.append((f'is there a shape in the {cur_location_name}?', pos_answer))
     yes_no_questions.append((f'is there a shape in the {cur_location_name} in the image?', pos_answer))
     yes_no_questions.append((f'does the image contain a shape in the {cur_location_name}?', pos_answer))
-    yes_no_questions.append((f'is a shape present in the{cur_location_name}?', pos_answer))
+    yes_no_questions.append((f'is a shape present in the {cur_location_name}?', pos_answer))
 
     neg_answer = 'no' if s is shape else 'yes'
     pos_answer = 'yes' if l is location else 'no'
     yes_no_questions.append((f'is there not a shape in the {cur_location_name}?', pos_answer))
     yes_no_questions.append((f'is there not a shape in the {cur_location_name} in the image?', pos_answer))
     yes_no_questions.append((f'does the image not contain a shape in the {cur_location_name}?', pos_answer))
-    yes_no_questions.append((f'is a shape not present in the{cur_location_name}?', pos_answer))
+    yes_no_questions.append((f'is a shape not present in the {cur_location_name}?', pos_answer))
 
 
   questions = list(filter(lambda _: randint(0, 99) < 48, questions))
