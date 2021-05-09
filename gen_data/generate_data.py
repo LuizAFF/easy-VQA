@@ -16,8 +16,8 @@ colors = list(Color)
 shapes = list(Shape)
 locations = list(Location)
 
-NUM_TRAIN = 4000
-NUM_TEST = 1000
+NUM_TRAIN = 8000
+NUM_TEST = 2000
 
 def create_data(image_path, num):
   qs = []
